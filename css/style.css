@@ -1,5 +1,85 @@
 body {
-	background-color: black;
-	color: white;
-	text-align: center;
+    background-color: #FFFDF8;
+    color: black;
+    text-align: center;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#containter {
+    margin: auto;
+    padding: 10px;
+}
+
+#content {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    margin: auto;
+    max-width: 90%;
+}
+
+#name {
+    font-family: GT-America;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    font-size: 8.0em;
+    font-size: 8.0vw;
+}
+
+#header-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    font-size: 1.4em;
+    font-size: 5.4vw;
+}
+
+#social {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    font-size: 1.4em;
+    font-size: 4.8vw;
+}
+
+.service {
+    font-family: GT-America;
+    font-size: 0.8em;
+}
+
+.symbols {
+    font-size: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (min-width: 800px) {
+    #content {
+        max-width: 80%;
+    }
+    #header-text {
+        font-size: 5.0vw;
+    }
+    #social {
+        font-size: 4.2vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #content {
+        max-width: 70%;
+    }
+    #header-text {
+        font-size: 4.0vw;
+    }
+    #social {
+        font-size: 3.8vw;
+    }
 }
