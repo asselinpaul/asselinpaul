@@ -1,10 +1,9 @@
 body {
-	font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant Garamond', serif;
     background-color: #FFFDF8;
-    color: black;
+    color: #222;
     text-align: center;
     cursor: default;
-
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -12,49 +11,43 @@ body {
     -o-user-select: none;
     user-select: none;
 }
-
 .block {
-	margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
 }
-
 .service {
     font-family: GT-America;
     font-size: 0.8em;
 }
-
 .symbols {
-    font-size: 0.5em;
+    font-size: 0.3em;
 }
-
 a {
     text-decoration: none;
-    color: black;
+    color: #222;
 }
-
 #containter {
     margin: auto;
     padding: 10px;
 }
-
 #content {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     margin: auto;
     max-width: 90%;
 }
-
 #name {
     font-family: GT-America;
+    color: #222;
     margin-top: 0.1em;
     margin-bottom: 0.1em;
     font-size: 8.0em;
     font-size: 8.0vw;
 }
-
 #header-text {
     font-weight: bold;
     font-size: 1.4em;
     font-size: 5.4vw;
+    line-height: 1;
 }
 
 #social {
@@ -62,11 +55,9 @@ a {
     font-size: 1.4em;
     font-size: 4.8vw;
 }
-
 #footer {
-	text-align: left;
+    text-align: left;
 }
-
 @media only screen and (min-width: 800px) {
     #content {
         max-width: 80%;
@@ -78,7 +69,6 @@ a {
         font-size: 4.2vw;
     }
 }
-
 @media only screen and (min-width: 1200px) {
     #content {
         max-width: 70%;
