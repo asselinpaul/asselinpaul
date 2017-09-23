@@ -1,84 +1,58 @@
 body {
-    font-family: 'Cormorant Garamond', serif;
-    background-color: #FFFDF8;
-    color: #222;
-    text-align: center;
-    cursor: default;
+    background-color: #000000;
+    color: #e5e5e5;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+a {
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+a:hover {
+    /*opacity: 0.8;*/
+    color: rgb(117, 182, 204);
 }
 
 ::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
+    color: rgb(117, 182, 204);
+    background: #2D3448;
 }
+
 ::-moz-selection {
-  background: #ffb7b7; /* Gecko Browsers */
+    color: rgb(117, 182, 204);
+    background: #2D3448;
 }
 
-.block {
-    margin-bottom: 1.5em;
-}
-.service {
-    font-family: GT-America;
-    font-size: 0.8em;
-}
-.symbols {
-    font-size: 0.3em;
-}
-a {
-    text-decoration: none;
-    color: #222;
-}
-#containter {
-    margin: auto;
-    padding: 10px;
-}
-#content {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    margin: auto;
-    max-width: 90%;
-}
-#name {
-    font-family: GT-America;
-    color: #222;
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-    font-size: 8.0em;
-    font-size: 8.0vw;
-}
-#header-text {
-    font-weight: bold;
-    font-size: 1.4em;
-    font-size: 5.4vw;
-    line-height: 1;
+table {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 
-#social {
-    font-weight: bold;
-    font-size: 1.4em;
-    font-size: 4.8vw;
+/*table:hover {
+    background-color: #12151C;
+}*/
+
+td {
+    width: 25vw;
+    vertical-align: text-top;
 }
-#footer {
-    text-align: left;
+
+td:nth-child(2) {
+    width: 70vw;
+    padding-left: 5vw;
 }
-@media only screen and (min-width: 800px) {
-    #content {
-        max-width: 80%;
-    }
-    #header-text {
-        font-size: 5.0vw;
-    }
-    #social {
-        font-size: 4.2vw;
-    }
+
+.grey {
+    color: #7f7f7f;
 }
-@media only screen and (min-width: 1200px) {
-    #content {
-        max-width: 70%;
-    }
-    #header-text {
-        font-size: 4.0vw;
-    }
-    #social {
-        font-size: 3.8vw;
+
+.dark-grey {
+    color: #2e2e2e;
+}
+
+@media only screen and (max-width: 444px) {
+    .p3 {
+        padding: 1rem !important;
     }
 }
