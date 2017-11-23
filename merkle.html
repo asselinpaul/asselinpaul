@@ -19,8 +19,7 @@
         <section>
 
             <p>Few data-structures can claim to be in the spotlight like Merkle trees. Powering distributed systems and decentralized networks, they have become increasingly prevalent in our lives. Although we are rarely exposed to them directly, they are worth studying for their elegance alone.</p>
-
-            <p>Before we tackle Merkle trees, it is worth reviewing hash function.</p>
+            <p>Merkle trees depend on hash functions, so we will start by reviewing those.</p>
         </section>
         <section>
             <h2>Hash Functions</h2>
@@ -48,7 +47,7 @@
                     <label for="sn-efficient" class="margin-toggle sidenote-number">
                     </label>
                     <input type="checkbox" id="sn-efficient" class="margin-toggle" />
-                    <span class="sidenote">for an input of size <i>n</i>, its hash can be computer in <i>O(n)</i></span>
+                    <span class="sidenote">for an input of size <i>n</i>, its hash can be computed in <i>O(n)</i> time</span>
                 </li>
             </ul>
             <p></p>
@@ -76,12 +75,12 @@
             <p>Using the pigeon-hole principle, we can formulate a process which is guaranteed to find a collision:</p>
             <p class="sans">Consider a hash function with a 256-bit output size. Pick 2<sup>256</sup>+1 distinct values and calculate their respective hashes. Since we picked more values than possible outputs, we are guaranteed that some pair collides when you apply the hash function.</p>
             <p>This method guarantees that we will cause a collision. We can reduce the number of values to examine while still being fairly likely to observe a collision by making use of the <a href="https://en.wikipedia.org/wiki/Birthday_problem">birthday paradox</a>. By examining the hashes of 2<sup>130</sup>+1 randomly chosen inputs, there is a 99.8 percent chance of finding a collision.</p>
-            <p>This method of uncovering hash collisions works for every hash function but takes an impractical amount of time. It would likely take far longer than the age of the universe to find a collision using all computing power on earth with such a process.
+            <p>This method of uncovering hash collisions works for every hash function but takes an impractical amount of time. It would likely take far longer than the age of the universe to find a collision using all the computing power available on earth.
                 <label for="sn-collision" class="margin-toggle sidenote-number">
                 </label>
                 <input type="checkbox" id="sn-collision" class="margin-toggle" />
                 <span class="sidenote"><i>Bitcoin and Cryptocurrency Technologies.</i> Princeton University Press, p.4</span></p>
-            <p>For some hash functions, it it easy to product collisions. Consider the following hash function:</p>
+            <p>For some hash functions, it it easy to produce collisions. Consider the following hash function:</p>
             <p class="sans">H(<i>x</i>) = <i>x</i> mod 2<sup>256</sup></p>
             <p>This function returns the last 256 bits of the input (a fixed-size output). It is trivial to find two values that have the same 256 bit ending. <b>5</b> and <b>5 + 2<sup>256</sup></b> would cause a collision for example.</p>
             <p>We don't know whether such methods exist for other hash methods (<i>e.g</i> SHA1). The general consensus is that these functions are suspected to be collision resistant but no formal proof has ever been made. The hash functions we rely on today have been tested thoroughly by mathematicians and no collision has been found. Occasionally, collisions are found after years of work and particular functions are phased out of cryptographic systems.
@@ -92,7 +91,7 @@
             <h3>Hiding</h3>
             <p>The second property our cryptographic hashes must abide by. Given a hash output, it shouldn't be possible to deduce what the input was.</p>
             <p>With <b>y = H(<i>x</i>)</b>, <b><i>x</i></b> can't be deduced from <b>y</b>.</p>
-            <p>When the set of potential inputs is fairly restricted, this can be hard. Imagine a problem where you output <i>true</i> or <i>false</i>. You then hash the result of the problem. An attacker can deduce whether the output was <i>true</i> or <i>false</i> by computing the hashes of those inputs on his side.</p>
+            <p>When the set of potential inputs is fairly restricted, this can be hard. Imagine a problem where you output <i>true</i> or <i>false</i>. You then hash the result of the problem. An attacker can deduce whether the output was <i>true</i> or <i>false</i> by computing the hashes of those inputs on his own.</p>
             <p>In a sense, we want the hash input, <b><i>x</i></b> to be taken from a set that is very spread out. It turns out we can hide even an input that is not spread out by concatenating it with another input that is spread out.</p>
             <p class="sans">A hash function <i>H</i> is said to be hiding if when a secret value <i>r</i> is chosen from a probability distribution that has <i>high min-entropy</i>, then, given <i>H(r || x)</i>, it is infeasible to find x.
                 <label for="sn-concat" class="margin-toggle sidenote-number">
