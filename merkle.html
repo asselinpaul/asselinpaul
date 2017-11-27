@@ -9,7 +9,7 @@
     <!-- <link rel="stylesheet" href="css/gr8.css"> -->
     <link rel="stylesheet" href="css/tufte.css">
     <link rel="icon" type="image/ico" href="favicon.ico" />
-    <title>Data structure: the Merkle Tree</title>
+    <title>Merkle Trees</title>
 </head>
 
 <body>
@@ -17,33 +17,31 @@
         <h1>Merkle Trees</h1>
         <p class="subtitle">An efficient and verifiable data structure</p>
         <section>
-
-            <p>Few data-structures can claim to be in the spotlight like Merkle trees. Powering distributed systems and decentralized networks, they have become increasingly prevalent in our lives. Although we are rarely exposed to them directly, they are worth studying for their elegance alone.</p>
-            <p>Merkle trees depend on hash functions, so we will start by reviewing those.</p>
+            <p>Few data-structures can claim to be in the spotlight quite like Merkle trees. They power distributed systems and decentralized networks and have become increasingly prevalent in our lives. Although we are rarely exposed to them directly, they are worth studying for their elegance alone.</p>
         </section>
         <section>
             <h2>Hash Functions</h2>
             <p>A hash function is a mathematical function which maps anything (represented as a finite string of characters) into an output of fixed length. </p>
-            <p>This is tremendously useful. Any piece of data has a signature that is significantly shorter than the data itself.</p>
+            <p>This is tremendously useful. Any data has a signature that is significantly smaller than itself.</p>
             <figure>
                 <img src="img/hashing.png" alt="hashing a string and an image example" style="padding-top: 20px;">
             </figure>
             <p>
-                This signature can be used to verify the integrity of data downloaded from potentially dubious sources. Some sites will show the hash for files so that you can check whether the file has been tempered with when you download it.</p>
+                This signature can be used to verify the integrity of data downloaded from potentially dubious sources. Some sites will show the hash for files so that users can check whether the file has been tempered with.</p>
             <figure>
                 <img src="img/hashing2.png" alt="hashing an original versus a tempered version" style="padding-top: 20px;">
             </figure>
-            <p>This highlights a key characteristic of hashing. It must be <i>nearly</i> impossible to modify a file to obtain a different file with the same hash (a hash collision). Although in theory it is possible, in practice it is not.</p>
-            <h3>Properties</h3>
+            <p>This highlights a key characteristic of hash functions. It must be <i>nearly</i> impossible to modify a file to obtain a different file with the same hash (a hash collision). Although in theory it is possible, in practice it is not.</p>
+            <h3>Properties of hash functions:</h3>
             <ul>
-                <li>its input can be of any size</li>
-                <li>its output is of fixed-size
+                <li>their input can be of any size</li>
+                <li>their output is of fixed-size
                     <label for="sn-fixed-size" class="margin-toggle sidenote-number">
                     </label>
                     <input type="checkbox" id="sn-fixed-size" class="margin-toggle" />
-                    <span class="sidenote"><i>e.g</i> 256-bit</span>
+                    <span class="sidenote"><i>e.g:</i> 256-bit</span>
                 </li>
-                <li>it is efficiently computable
+                <li>they are efficiently computable
                     <label for="sn-efficient" class="margin-toggle sidenote-number">
                     </label>
                     <input type="checkbox" id="sn-efficient" class="margin-toggle" />
@@ -54,15 +52,14 @@
         </section>
         <section>
             <h2>Cryptographic Hash Functions</h2>
-            <p>Given that merkle trees are primarily used in a setting where cryptography is important, our hash functions will have to abide by the following (stronger) properties:</p>
+            <p>Since Merkle trees are primarily used in settings where cryptography matters, our hash functions will have to abide by the following (stronger) properties:</p>
             <h3>Collision Resistance</h3>
-            <p>A collision occurs when two distinct inputs produce the same output.</p>
+            <p>A collision occurs when two distinct inputs produce the same output:</p>
             <figure>
-                <label for="mn-exports-imports" class="margin-toggle">A hash collision:</label>
                 <img src="img/collision.png" alt="example of a hash collision" style="padding-top: 20px;">
             </figure>
             <p>A hash function is collision resistant if nobody can find a collision.</p>
-            <p>It is worth noting that <i>"nobody can find"</i> does not equate to <i>"does not exist"</i>. In fact, collision do exist because the input space is larger than the output space.
+            <p>It is worth noting that <i>"nobody can find"</i> does not equate to <i>"does not exist"</i>. In fact, collisions do exist because the input space is larger than the output space.
                 <label for="sn-space" class="margin-toggle sidenote-number">
                 </label>
                 <input type="checkbox" id="sn-space" class="margin-toggle" />
@@ -89,7 +86,7 @@
                 <input type="checkbox" id="sn-collision2" class="margin-toggle" />
                 <span class="sidenote">such was the fate of <a href="https://en.wikipedia.org/wiki/MD5">MD5</a></span></p>
             <h3>Hiding</h3>
-            <p>The second property our cryptographic hashes must abide by. Given a hash output, it shouldn't be possible to deduce what the input was.</p>
+            <p>The second property our cryptographic hashes must abide by: given a hash output, it should be impossible to deduce its input.</p>
             <p>With <b>y = H(<i>x</i>)</b>, <b><i>x</i></b> can't be deduced from <b>y</b>.</p>
             <p>When the set of potential inputs is fairly restricted, this can be hard. Imagine a problem where you output <i>true</i> or <i>false</i>. You then hash the result of the problem. An attacker can deduce whether the output was <i>true</i> or <i>false</i> by computing the hashes of those inputs on his own.</p>
             <p>In a sense, we want the hash input, <b><i>x</i></b> to be taken from a set that is very spread out. It turns out we can hide even an input that is not spread out by concatenating it with another input that is spread out.</p>
@@ -103,7 +100,7 @@
             <p class="sans">A hash function <i>H</i> is said to be puzzle friendly if for ever every possible <i>n</i>-bit output value, if <i>k</i> is chosen from a distribution with high min-entropy, then it is infeasible to find <i>x</i> such that <i>H(k || x)</i> = <i>y</i> in time significantly less than 2<sup>n</sup>.</p>
             <p>In more concrete terms, if someone wants to have the hash function output <b>Z</b> and part of the input(<b>k</b>) has been chosen in a suitably random way, then it's very difficult to find the value <b>x</b> that makes the hash function output <b>Z</b>.</p>
             <h3>An example: SHA-256</h3>
-            <p>Now that we've seen the properties of cryptographic hash functions, let's take a look at a commonly used one.</p>
+            <p>Having examined the properties of cryptographic hash functions, let's take a look at a commonly used one: <b>SHA-256</b></p>
             <p>SHA-256 outputs 256-bit hashes and works by using the <i>Merkle-Damgård transform</i> to convert the underlying fixed-length collision-resistant hash function
                 <label for="sn-compression" class="margin-toggle sidenote-number">
                 </label>
@@ -112,28 +109,24 @@
             <figure>
                 <img src="img/sha_256.png" alt="sha_256 diagram" style="padding-top: 40px;">
             </figure>
-            <p>The input is padded so that its length is a multiple of 512 bits. It can then be divided into the <i>n</i> message block.</p>
+            <p>The input is padded so that its length is a multiple of 512 bits. It can then be divided into the <i>n</i> message block and processed as shown in the figure above.</p>
             <h3>Recapitulative</h3>
-            <p>Hash functions are incredibly versatile and therefore require different properties based on their application.
-                <label for="sn-property" class="margin-toggle sidenote-number">
-                </label>
-                <input type="checkbox" id="sn-property" class="margin-toggle" />
-                <span class="sidenote">puzzle-friendliness is required for crypto-currency systems but isn't necessary for other applications.</span></p>
-            <p>The hash serves as a fixed-length summary, or unambiguous signature, of a message. It gives us an efficient way to remember things we've seen before and to recognise them again. Whereas an entire file could have been hundreds-of-gigabytes long, its hash is of fixed length (256 bits in our examples). This greatly reduces storage requirements and enables a great number of practical uses.</p>
+            <p>The hash serves as a fixed-length summary, or unambiguous signature, of a message. It gives us an efficient way to remember things we've seen before and to recognise them again. Whereas an entire file could have been hundreds-of-gigabytes in size, its hash is of fixed length (256 bits in our examples). This greatly reduces storage requirements and enables a great number of practical uses.</p>
+            <p>It is worth noting that different applications of hash functions require varying properties. Although puzzle-friendliness might be required in cryptocurrency systems, it isn't for other applications.</p>
         </section>
         <section>
             <h2>Hash Pointers</h2>
             <figure>
                 <img src="img/hash_pointer.png" alt="hash pointer diagram" style="padding-top: 40px; width: 40%;">
             </figure>
-            <p>A Hash Pointer is a data-structure that points to data along with a cryptographic hash of the data. In addition to information retrieval, it enables data-integrity verification.</p>
+            <p>A Hash Pointer is a data-structure that points to data along with a cryptographic hash of the data. In addition to enabling information retrieval, hash pointers can be used to verify the integrity of the data.</p>
         </section>
         <section>
             <h2>Block Chains</h2>
             <figure>
                 <img src="img/blockchain.png" alt="blockchain diagram" style="padding-top: 20px; width: 80%;">
             </figure>
-            <p>A block chain is a linked list that is built with hash pointers. It is a tamper-evident log because changes to the chain will cause detectable inconsistencies between data and the hash pointer to that data (which cascades right through to the head pointer).</p>
+            <p>A block chain is a linked list that is built with hash pointers. It is a tamper-evident log because changes to the chain will cause detectable inconsistencies between a data block and the hash pointer to the data block (which cascades right through to the head pointer).</p>
             <figure>
                 <img src="img/blockchain2.png" alt="blockchain cascading error diagram" style="padding-top: 10px; width: 84%;">
             </figure>
@@ -143,7 +136,7 @@
             <figure>
                 <img src="img/merkle.png" alt="merkle tree diagram" style="padding-top: 20px; width: 90%;">
             </figure>
-            <p>Ralph Merkle had the idea to combine binary trees and hash pointers to create the Merkle Tree in 1979. The leaves contain hash pointers (arranged in pairs) and the hash of each of these blocks is stored in the parent node.</p>
+            <p>Ralph Merkle had the idea to combine binary trees and hash pointers to create the Merkle tree in 1979. The leaves contain hash pointers (arranged in pairs) and the hash of each of these blocks is stored in the parent node.</p>
             <p>We only need to store the root of the tree to verify the integrity of the tree. As in the block chain example, a change at the leaf-level would induce a change to hashes that bubbles up all the way to the root node, effectively making the data-structure tamper-proof.</p>
             <p>The merkle tree improves over the block chain by enabling concise <i>proof of membership</i>. That is, it is efficient to figure out whether a data block is a member of the Merkle Tree.
                 <span class="marginnote"><img src="img/merkle_efficiency.png" alt="">
@@ -155,15 +148,15 @@
             <figure>
                 <img src="img/membership.png" alt="merkle tree membership diagram" style="padding-top: 20px; width: 40%;">
             </figure>
-            <p>If there are <i>n</i> nodes in the tree, only about <i>log(n)</i> items need to be shown. Even with large Merkle Trees, we can prove membership in a relatively short time. The space and time requirements are of the order <i>log(n)</i>.
+            <p>If there are <i>n</i> nodes in the tree, only about <i>log(n)</i> items need to be shown. Even with large Merkle trees, we can prove membership in a relatively short time. The space and time requirements are of the order <i>log(n)</i>.
                 <label for="sn-order" class="margin-toggle sidenote-number">
                 </label>
                 <input type="checkbox" id="sn-order" class="margin-toggle" />
-                <span class="sidenote">whereas they are of the order <i>n</i> for a block chain</span>
+                <span class="sidenote">whereas they are of the order <i>n</i> for block chains</span>
             </p>
         </section>
         <section>
-            <h2>Uses</h2>
+            <h2>Uses of Merkle Trees</h2>
             <h3>Git</h3>
             <p>The version control system uses Merkle Trees to see which files changed in the tracked directory.</p>
             <figure>
@@ -176,7 +169,7 @@
             <h3>Bitcoin</h3>
             <p>Merkle Trees are used to summarise all the transactions in a particular block, thus providing an efficient way to verify wherther a transaction is included in a block.</p>
             <h3>Databases</h3>
-            <p>Apache Cassandra, Dynamo and other NoSQL use Merkle trees to detect inconsistencies between replicas of databases.
+            <p>Apache Cassandra, Dynamo and other NoSQL databases use Merkle trees to detect inconsistencies between replicas of databases.
                 <label for="sn-cassandra" class="margin-toggle sidenote-number">
                 </label>
                 <input type="checkbox" id="sn-cassandra" class="margin-toggle" />
@@ -196,7 +189,7 @@
             <h2>Further Reading</h2>
             <ul>
                 <li>
-                    Traditional Merkle trees cannot be applied to graphs, for they are more complicated than trees. This paper from Ashish Kundu
+                    Traditional Merkle trees cannot be applied to graphs because graphs are more complicated than trees. This paper from Ashish Kundu
                      <label for="sn-kundu" class="margin-toggle sidenote-number">
                 </label>
                 <input type="checkbox" id="sn-kundu" class="margin-toggle" />
@@ -228,7 +221,7 @@
             <h3>Thank you for your time.</h3>
         </section>
         <section>
-            <h2>Sources</h2>
+            <h3>Sources</h3>
             <footer class="sans">The section on Cryptographic Hash Functions was influenced by:</footer>
             <footer> Narayanan, Arvind., Bonneau, Joseph., Felten, Edward., Miller, Andrew., Goldfeder, Steven. (2016) <i>Bitcoin and Cryptocurrency Technologies.</i> Princeton University Press</footer>
         </section>
@@ -237,7 +230,7 @@
             <footer>This document uses the <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> library. The figures were drawn in <a href="https://www.sketchapp.com/">Sketch</a>.</footer>
             <footer>The image used in the first figure is a <a href="https://www.flickr.com/photos/chrisjongkind/10357168123">picture</a> of Mori Tower in Roppongi, Minato, Tokyo.</footer>
             <footer>The site is hosted on <a href="https://github.com/">Github</a> and served by <a href="https://www.netlify.com/">Netlify</a>.</footer>
-            <footer>Improve this document by submitting a pull request.</footer>
+            <footer>Improve this document by submitting a <a href="https://github.com/asselinpaul/asselinpaul/blob/master/merkle.html">pull request</a>.</footer>
             <!-- TODO -->
         </section>
     </article>
