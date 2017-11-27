@@ -71,7 +71,7 @@
             </figure>
             <p>Using the pigeon-hole principle, we can formulate a process which is guaranteed to find a collision:</p>
             <p class="sans">Consider a hash function with a 256-bit output size. Pick 2<sup>256</sup>+1 distinct values and calculate their respective hashes. Since we picked more values than possible outputs, we are guaranteed that some pair collides when you apply the hash function.</p>
-            <p>This method guarantees that we will cause a collision. We can reduce the number of values to examine while still being fairly likely to observe a collision by making use of the <a href="https://en.wikipedia.org/wiki/Birthday_problem">birthday paradox</a>. By examining the hashes of 2<sup>130</sup>+1 randomly chosen inputs, there is a 99.8 percent chance of finding a collision.</p>
+            <p>This method guarantees that we will cause a collision. We can reduce the number of values to examine while still being fairly likely to observe a collision by making use of the <a href="https://en.wikipedia.org/wiki/Birthday_problem">birthday paradox</a> in a cryptographic setting (known as a <a href="https://en.wikipedia.org/wiki/Birthday_attack">birthday attack</a>). By examining the hashes of 2<sup>130</sup>+1 randomly chosen inputs, there is a 99.8 percent chance of finding a collision.</p>
             <p>This method of uncovering hash collisions works for every hash function but takes an impractical amount of time. It would likely take far longer than the age of the universe to find a collision using all the computing power available on earth.
                 <label for="sn-collision" class="margin-toggle sidenote-number">
                 </label>
