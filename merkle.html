@@ -31,7 +31,7 @@
             <figure>
                 <img src="img/hashing2.png" alt="hashing an original versus a tempered version" style="padding-top: 20px;">
             </figure>
-            <p>This highlights a key characteristic of hash functions. It must be <i>nearly</i> impossible to modify a file to obtain a different file with the same hash (a hash collision). Although in theory it is possible, in practice it is not.</p>
+            <p>This highlights a key characteristic of hash functions. It must be <i>nearly</i> impossible to modify a file to obtain a different file with the same hash (a hash collision).</p>
             <h3>Properties of hash functions:</h3>
             <ul>
                 <li>their input can be of any size</li>
@@ -80,7 +80,7 @@
             <p>For some hash functions, it it easy to produce collisions. Consider the following hash function:</p>
             <p class="sans">H(<i>x</i>) = <i>x</i> mod 2<sup>256</sup></p>
             <p>This function returns the last 256 bits of the input (a fixed-size output). It is trivial to find two values that have the same 256 bit ending. <b>5</b> and <b>5 + 2<sup>256</sup></b> would cause a collision for example.</p>
-            <p>We don't know whether such methods exist for other hash methods (<i>e.g</i> SHA1). The general consensus is that these functions are suspected to be collision resistant but no formal proof has ever been made. The hash functions we rely on today have been tested thoroughly by mathematicians and no collision has been found. Occasionally, collisions are found after years of work and particular functions are phased out of cryptographic systems.
+            <p>We don't know whether such methods exist for other hash methods (<i>e.g</i> <a href="https://en.wikipedia.org/wiki/SHA-2">SHA512</a>). The general consensus is that these functions are suspected to be collision resistant but no formal proof has ever been made. The hash functions we rely on today have been tested thoroughly by mathematicians and no collision has been found. Occasionally, collisions are found after years of work and particular functions are phased out of cryptographic systems.
                 <label for="sn-collision2" class="margin-toggle sidenote-number">
                 </label>
                 <input type="checkbox" id="sn-collision2" class="margin-toggle" />
@@ -90,7 +90,7 @@
             <p>With <b>y = H(<i>x</i>)</b>, <b><i>x</i></b> can't be deduced from <b>y</b>.</p>
             <p>When the set of potential inputs is fairly restricted, this can be hard. Imagine a problem where you output <i>true</i> or <i>false</i>. You then hash the result of the problem. An attacker can deduce whether the output was <i>true</i> or <i>false</i> by computing the hashes of those inputs on his own.</p>
             <p>In a sense, we want the hash input, <b><i>x</i></b> to be taken from a set that is very spread out. It turns out we can hide even an input that is not spread out by concatenating it with another input that is spread out.</p>
-            <p class="sans">A hash function <i>H</i> is said to be hiding if when a secret value <i>r</i> is chosen from a probability distribution that has <i>high min-entropy</i>, then, given <i>H(r || x)</i>, it is infeasible to find x.
+            <p class="sans">A hash function <i>H</i> is said to be hiding if when a secret value <i>r</i> is chosen from a probability distribution that has <a href="https://www.reddit.com/r/crypto/comments/4qwxdz/high_minentropy/"><i>high min-entropy</i></a>, then, given <i>H(r || x)</i>, it is infeasible to find x.
                 <label for="sn-concat" class="margin-toggle sidenote-number">
                 </label>
                 <input type="checkbox" id="sn-concat" class="margin-toggle" />
@@ -99,8 +99,8 @@
             <p>Lastly, we require hash functions to be puzzle friendly. This property is the least intuitive of the three.</p>
             <p class="sans">A hash function <i>H</i> is said to be puzzle friendly if for ever every possible <i>n</i>-bit output value, if <i>k</i> is chosen from a distribution with high min-entropy, then it is infeasible to find <i>x</i> such that <i>H(k || x)</i> = <i>y</i> in time significantly less than 2<sup>n</sup>.</p>
             <p>In more concrete terms, if someone wants to have the hash function output <b>Z</b> and part of the input(<b>k</b>) has been chosen in a suitably random way, then it's very difficult to find the value <b>x</b> that makes the hash function output <b>Z</b>.</p>
-            <h3>An example: SHA-256</h3>
-            <p>Having examined the properties of cryptographic hash functions, let's take a look at a commonly used one: <b>SHA-256</b></p>
+            <h3>An example: <a href="https://en.wikipedia.org/wiki/SHA-2">SHA-256</a></h3>
+            <p>Having examined the properties of cryptographic hash functions, let's take a look at a commonly used one: <b><a href="SHA-256">SHA-256</a></b></p>
             <p>SHA-256 outputs 256-bit hashes and works by using the <i>Merkle-Damgård transform</i> to convert the underlying fixed-length collision-resistant hash function
                 <label for="sn-compression" class="margin-toggle sidenote-number">
                 </label>
