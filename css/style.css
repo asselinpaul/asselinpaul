@@ -51,6 +51,11 @@ td:nth-child(2) {
     color: #2e2e2e;
 }
 
+img {
+    max-width: 100%;
+    max-width: 800px;
+}
+
 @media only screen and (max-width: 444px) {
     .p3 {
         padding: 1rem !important;
