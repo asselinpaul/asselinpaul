@@ -1,11 +1,11 @@
 body {
-    background-color: #111111;
-    color: #e5e5e5;
+    background-color: #f8f6f2;
+    color: #40403d;
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
 a {
-    color: #e5e5e5;
+    color: #40403d;
     text-decoration: none;
 }
 
@@ -16,12 +16,12 @@ a:hover {
 
 ::selection {
     color: rgb(117, 182, 204);
-    background: #2D3448;
+    background: #f8f6f2;
 }
 
 ::-moz-selection {
     color: rgb(117, 182, 204);
-    background: #2D3448;
+    background: #f8f6f2;
 }
 
 table {
@@ -47,8 +47,8 @@ td:nth-child(2) {
     color: #7f7f7f;
 }
 
-.dark-grey {
-    color: #2e2e2e;
+.light-grey {
+    color: #7f7f7f4d;
 }
 
 img {
