@@ -2,6 +2,9 @@ body {
     background-color: #f8f6f2;
     color: #40403d;
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
