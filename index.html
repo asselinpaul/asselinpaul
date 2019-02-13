@@ -193,17 +193,23 @@
         </table>
     </div>
     <!-- <hr class="mt4"> -->
-    <script type="text/javascript">
-    var clicky_site_ids = clicky_site_ids || [];
-    clicky_site_ids.push(101111328);
-    (function() {
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = '//static.getclicky.com/js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
-    })();
-    </script>
+
+<!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+<script>
+(function(f, a, t, h, o, m){
+    a[h]=a[h]||function(){
+        (a[h].q=a[h].q||[]).push(arguments)
+    };
+    o=f.createElement('script'),
+    m=f.getElementsByTagName('script')[0];
+    o.async=1; o.src=t; o.id='fathom-script';
+    m.parentNode.insertBefore(o,m)
+})(document, window, '//li557-34.members.linode.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'PMRLP');
+fathom('trackPageview');
+</script>
+<!-- / Fathom -->
+
 </body>
 
 </html>
