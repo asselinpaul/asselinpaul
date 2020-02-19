@@ -58,12 +58,10 @@ table.stripe tr td{
 table.stripe tr:nth-child(odd) td{
     padding-left: 2rem;
 }
+
 table.stripe tr:nth-child(even) td{
     padding-left: 2rem;
     background-color: #f0efec;
-}
-table.stripe tr:nth-child(1) td{
-    padding-left: 0.5rem;
 }
 
 td {
