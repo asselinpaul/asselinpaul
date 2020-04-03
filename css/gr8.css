@@ -207,6 +207,7 @@
 .ar50:before{padding-top:50%;content:"";display:block}
 .ar75:before{padding-top:75%;content:"";display:block}
 .ar100:before{padding-top:100%;content:"";display:block}
+.fs0-8{font-size:0.8rem}
 .fs1{font-size:1rem}
 .fs1-2{font-size:1.2rem}
 .fs1-6{font-size:1.6rem}
