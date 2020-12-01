@@ -20,15 +20,16 @@ body {
     padding: 2rem;
 }
 
-@media only screen and (min-width: 444px) {
+@media only screen and (max-width: 444px) {
     #content {
         margin-left: 0rem !important;
+        padding: 0.25rem !important;
     }
 }
 
 @media only screen and (min-width: 666px) {
     #content {
-        margin-left: 2rem !important;
+        margin-left: 1rem !important;
     }
 }
 
