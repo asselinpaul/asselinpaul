@@ -125,10 +125,14 @@ table.stripe tr td {
 
 table.stripe tr:nth-child(odd) td {
     padding-left: 1rem;
+    padding-top: calc(0.4rem - 2px);
+    border-top: 2px solid #f0efec;
 }
 
 table.stripe tr:nth-child(even) td {
     padding-left: 1rem;
+    padding-top: calc(0.4rem - 2px);
+    border-top: 2px solid #f0efec;
     background-color: #f0efec;
 }
 
