@@ -72,6 +72,14 @@ body {
     color: #161616 !important;
 }
 
+.underlined {
+    background-color: #7165582b;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
 #menu a {
     color: #38322c;
     text-decoration: none;
