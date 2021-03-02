@@ -59,13 +59,14 @@ body {
     text-align: right;
     width: 150px;
     font-size: 1.3rem;
-    background-color: #716558;
+    font-weight: 500;
+    background-color: #e8e0d9;
     padding: 2rem;
     color: #38322c;
 }
 
 .selected {
-    color: white !important;
+    color: #423b2e !important;
 }
 
 .author {
@@ -78,19 +79,20 @@ body {
     padding-right: 6px;
     padding-top: 2px;
     padding-bottom: 2px;
+    font-weight: 500;
 }
 
 #menu a {
-    color: #38322c;
+    color: #514c41;
     text-decoration: none;
 }
 
 #menu a:hover {
-    color: #38322c;
+    color: #514c41;
 }
 
 #menu a:visited {
-    color: #38322c;
+    color: #514c41;
 }
 
 #menu ul {
