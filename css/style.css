@@ -67,6 +67,7 @@ body {
 
 .selected {
     color: #423b2e !important;
+    font-weight: 600;
 }
 
 .author {
