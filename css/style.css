@@ -104,12 +104,22 @@ body {
 
 #content a {
     color: #38322c;
-    font-weight: 00;
+    font-weight: 400;
     /*border: 1px solid rgb(117, 182, 204);
     border-radius: 5px;
     padding: 0.25em;
     padding-left: 0.75em;
     padding-right: 0.75em;*/
+}
+
+#books a {
+    text-decoration: none;
+    background-color: #7165582b;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 500;
 }
 
 a:hover {
