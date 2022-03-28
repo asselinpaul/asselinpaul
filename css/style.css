@@ -18,6 +18,7 @@ body {
 #content {
     max-width: 50rem;
     padding: 2rem;
+    padding-bottom: 84px;
 }
 
 @media only screen and (max-width: 444px) {
@@ -52,17 +53,20 @@ body {
 }
 
 #menu {
-    display: inline;
-    float: right;
-    margin-top: 30px;
-    margin-right: 20px;
-    text-align: right;
-    width: 150px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    background-color: #ebeade;
-    padding: 2rem;
+    background-color: #fffffd;
+    padding: 1rem;
     color: #38322c;
+    top: calc(100vh - 84px);
+    position: sticky;
+    text-align: center;
+    width: 80%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #f2e3d3;
+    border-radius: 5px;
 }
 
 .selected {
@@ -86,6 +90,7 @@ body {
 #menu a {
     color: #514c41;
     text-decoration: none;
+    padding: 1rem;
 }
 
 #menu a:hover {
@@ -148,7 +153,7 @@ table.stripe tr:nth-child(even) td {
     padding-left: 1rem;
     padding-top: calc(0.4rem - 2px);
     border-top: 2px solid #f0efec;
-    background-color: #f0efec;
+    background-color: #fffcf3;
 }
 
 td {
