@@ -121,6 +121,10 @@ body {
     width: 100%;
 }
 
+#content .wide-img {
+    max-width: 800px;
+}
+
 #books a {
     text-decoration: none;
 }
