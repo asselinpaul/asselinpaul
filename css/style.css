@@ -105,11 +105,20 @@ body {
 #content a {
     color: #38322c;
     font-weight: 400;
-    /*border: 1px solid rgb(117, 182, 204);
-    border-radius: 5px;
-    padding: 0.25em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;*/
+}
+
+#content :is(h3, h4, h5, h6) {
+    margin-top: 2rem;
+    /* margin-bottom: 1rem; */
+}
+
+#content :is(h1, h2, h3, h4, h5, h6) a {
+    font-weight: bold;
+}
+
+#content img {
+    max-width: 600px;
+    width: 100%;
 }
 
 #books a {
@@ -175,6 +184,12 @@ hr {
 .big {
     width: 100%;
     max-width: 800px;
+}
+
+#post-date {
+    float: right;
+    font-weight: 500;
+    color: #71655970;
 }
 
 @media only screen and (max-width: 444px) {
