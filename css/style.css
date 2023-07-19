@@ -190,6 +190,17 @@ hr {
     max-width: 800px;
 }
 
+#home {
+    padding-left: 12px;
+    padding-top: 8px;
+}
+
+#home a {
+    font-weight: 500;
+    color: #71655970 !important;
+    text-decoration-line: none !important;
+}
+
 #post-date {
     float: right;
     font-weight: 500;
