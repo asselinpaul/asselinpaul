@@ -29,6 +29,10 @@ body {
     padding: 2rem;
 }
 
+blockquote {
+    font-style: italic;
+}
+
 @media only screen and (max-width: 444px) {
     #content {
         margin-left: 0rem !important;
