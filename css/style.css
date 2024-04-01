@@ -141,7 +141,7 @@ blockquote {
     max-width: 800px;
 }
 
-#books a {
+.books a {
     text-decoration: none;
 }
 
