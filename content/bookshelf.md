@@ -4,7 +4,7 @@ menu = "main"
 summary = "A list of books — inspired by Patrick Collison , Dan Wang , Bret Victor amongst others. As is a tale, so is life."
 +++
 
-### Bookshelf
+#### Bookshelf
 
 Inspired by **[Patrick Collison](https://patrickcollison.com/bookshelf)**, **[Dan Wang](https://danwang.co/about/)**, **[Bret Victor](http://worrydream.com/Shelf2015/)** amongst **[others](https://www.are.na/paul-asselin/bookshelves-1518410307)**.
 
