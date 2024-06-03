@@ -29,8 +29,8 @@ blockquote {
 
 @media only screen and (max-width: 444px) {
     body {
-        
-        padding: 0.1rem !important;
+        margin: 1rem !important;
+        padding: 0rem !important;
     }
 }
 
