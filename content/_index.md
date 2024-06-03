@@ -6,9 +6,11 @@
 
 I'm interested in software, hardware, org design and how tools shape what we make.
 
-I currently work as a full-stack engineer writing software across the lending stack (useful: [a primer on ledgers](https://www.youtube.com/watch?v=dteEjJsKxfc)). Prior to that, I studied Computer Science at Penn.
+I currently work as a full-stack engineer writing software across the lending stack. Prior to that, I studied Computer Science at the University of Pennsylvania.
 
-<div>
+<br>
+
+<div id="intro">
 You can reach me at <a
                 style="text-decoration: none"
                 href="mailto:mail@asselinpaul.com"
@@ -107,21 +109,26 @@ or find me on
 
 </div>
 
-### Projects
+<br>
+<br>
 
-- <a target="_blank" href="https://nonfinito.xyz">
-              Multimodal Model Evaluation — Non finito
-            </a>
-            <a target="_blank" href="https://nonfinito.xyz"
-              ><img src="/img/example_eval.png" alt="example eval"
-            /></a>
+#### Projects
+
+<a target="_blank" href="https://nonfinito.xyz">
+    <b>Multimodal Model Evaluation — Non finito</b>
+  </a>
+  <br>
+  <br>
+  <a target="_blank" href="https://nonfinito.xyz"
+      ><img src="/img/example_eval.png" alt="example eval"
+  /></a>
 
 <div>
-    Evaluate and compare hundreds of models with automated evaluations
-    (<a
-    target="_blank"
-    href="https://nonfinito.xyz/evals?eval_input=6f05a982-46c8-4c31-9fc7-d6785c19ef5e"
-    >example</a
-    >
-    & <a href="/003.html">more info</a>)
-</div>
+      Evaluate and compare hundreds of models with automated evaluations
+      (<a
+      target="_blank"
+      href="https://nonfinito.xyz/evals?eval_input=6f05a982-46c8-4c31-9fc7-d6785c19ef5e"
+      >example</a
+      >
+      & <a href="/003.html">blog post with more info</a>)
+  </div>

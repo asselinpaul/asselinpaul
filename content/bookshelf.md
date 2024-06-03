@@ -53,6 +53,9 @@ Inspired by **[Patrick Collison](https://patrickcollison.com/bookshelf)**, **[Da
     text-decoration: none;
     color: #38322c;
   }
+  content a:hover {
+    color: #38322c;
+}
   content ul {
     padding-inline-start: 0px;
   }

@@ -1,0 +1,22 @@
+{{ define "main" }} {{ if eq .Type "blog" }}{{ if not .Params.menu }}
+<div style="margin-top: 1rem">
+  <h3 style="display: inline-block; margin-block-start: 0; max-width: 75%">
+    {{ .Title }}
+  </h3>
+  <div id="post-date">
+    <i>
+      <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+        {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
+      </time>
+    </i>
+  </div>
+</div>
+{{ end }}{{ end }}
+<content> {{ .Content }} </content>
+
+<p>
+  {{ range (.GetTerms "tags") }}
+  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+  {{ end }}
+</p>
+{{ end }}
