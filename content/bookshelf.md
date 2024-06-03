@@ -3,17 +3,17 @@ title = "Bookshelf"
 menu = "main"
 +++
 
-#### Bookshelf
+### Bookshelf
 
-Inspired by [Patrick Collison](https://patrickcollison.com/bookshelf), [Dan Wang](https://danwang.co/about/), [Bret Victor](http://worrydream.com/Shelf2015/) amongst [others](https://www.are.na/paul-asselin/bookshelves-1518410307).
+Inspired by **[Patrick Collison](https://patrickcollison.com/bookshelf)**, **[Dan Wang](https://danwang.co/about/)**, **[Bret Victor](http://worrydream.com/Shelf2015/)** amongst **[others](https://www.are.na/paul-asselin/bookshelves-1518410307)**.
 
----
+<br>
 
 - **[The Master and Margherita — Mikhail Bulgakov](https://www.amazon.com/Master-Margarita-50th-Anniversary-Penguin-Classics/dp/0143108271)**
 - [The Remains of the Day — Kazuo Ishiguro](https://www.amazon.com/Remains-Day-Vintage-International-ebook/dp/B003VPWX6K)
 - **[The Return — Hisham Matar](https://www.amazon.com/Return-Pulitzer-Prize-Winner-Fathers-ebook/dp/B018PD2HIQ)**
 - **[Siddhartha — Hermann Hesse](https://www.amazon.com/Siddhartha-Novel-Hermann-Hesse/dp/0553208845)**
-- [In Praise of Shadows — Jun'ichirō Tanizaki](https://www.amazon.com/Praise-Shadows-Junichiro-Tanizaki/dp/0918172020)
+- [In Praise of Shadows — Jun’ichirō Tanizaki](https://www.amazon.com/Praise-Shadows-Junichiro-Tanizaki/dp/0918172020)
 - **[Kaputt — Curzio Malaparte](https://www.amazon.com/Kaputt-York-Review-Books-Classics/dp/1590171470)**
 - [Hard Rain Falling — Don Carpenter](https://www.amazon.com/Hard-Falling-Review-Books-Classics-ebook/dp/B003KN3M72)
 - **[The Baron in the Trees — Italo Calvino](https://www.amazon.com/Baron-Trees-Italo-Calvino-ebook/dp/B01I4FPM0U)**
@@ -47,3 +47,31 @@ Inspired by [Patrick Collison](https://patrickcollison.com/bookshelf), [Dan Wang
 - **[The Betrothed — Alessandro Manzoni](https://www.amazon.com/Betrothed-Novel-Alessandro-Manzoni/dp/0679643567/ref=sr_1_1?crid=2SNMMYL943SBT&keywords=The+Betrothed&qid=1681939059&sprefix=the+betrothed,aps,150&sr=8-1)**
 - **[When we cease to understand the world — Benjamín Labatut](https://www.amazon.com/gp/product/1681375664/ref=ppx_od_dt_b_asin_title_s01?ie=UTF8&psc=1)**
 - [Confessions of an Advertising Man — David Ogilvy](https://www.amazon.com/Confessions-Advertising-Man-David-Ogilvy/dp/190491537X)
+
+<style>
+  content a {
+    text-decoration: none;
+    color: #38322c;
+  }
+  content ul {
+    padding-inline-start: 0px;
+  }
+  content ul li {
+    list-style-type: none;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+
+  content ul li:nth-child(odd) {
+    padding-left: 1rem;
+    padding-top: calc(0.4rem - 2px);
+    border-top: 2px solid #f0efec;
+  }
+
+  content ul li:nth-child(even) {
+    padding-left: 1rem;
+    padding-top: calc(0.4rem - 2px);
+    border-top: 2px solid #f0efec;
+    background-color: #f0efec;
+  }
+</style>

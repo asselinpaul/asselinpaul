@@ -13,7 +13,7 @@
       <link>http://localhost:1313/multimodal-model-evaluations/</link>
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/multimodal-model-evaluations/</guid>
-      <description>Announcing https://nonfinito.xyz — a tool that makes it easy to run and share evaluations of multimodal models. We support hundreds of models via OpenRouter: Run the same evaluation on multiple models to compare their outputs: &amp;lt;a href=&amp;ldquo; https://nonfinito.xyz/evals?eval_input=db5fdb62-e778-47cd-a0c0-8357f8ab330d&amp;amp;#34; target=&amp;rdquo;_blank&amp;quot; rel=&amp;ldquo;noopener noreferrer&amp;rdquo;&#xA;Vision-Language Models (VLMs) are supported:&#xA;Write your own evaluator code or use our built-in evaluators:&#xA;You can try it out at https://nonfinito.xyz. If you are curious, it&#39;s built with OpenRouter, Remix, Cloudflare R2, PostgreSQL, Clerk, inngest, Radix &amp; Fly.</description>
+      <description>Announcing https://nonfinito.xyz — a tool that makes it easy to run and share evaluations of multimodal models. We support hundreds of models via OpenRouter: Run the same evaluation on multiple models to compare their outputs: &amp;lt;a href=&amp;ldquo; https://nonfinito.xyz/evals?eval_input=db5fdb62-e778-47cd-a0c0-8357f8ab330d&amp;#34; target=&amp;rdquo;_blank&amp;quot; rel=&amp;ldquo;noopener noreferrer&amp;rdquo;&#xA;Vision-Language Models (VLMs) are supported:&#xA;Write your own evaluator code or use our built-in evaluators:&#xA;You can try it out at https://nonfinito.xyz. If you are curious, it&#39;s built with OpenRouter, Remix, Cloudflare R2, PostgreSQL, Clerk, inngest, Radix &amp; Fly.</description>
     </item>
     <item>
       <title>002 - links</title>
