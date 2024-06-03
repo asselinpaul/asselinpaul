@@ -1,7 +1,7 @@
 +++
 title = "Bookshelf"
 menu = "main"
-summary = "A list of books — inspired by Patrick Collison , Dan Wang , Bret Victor amongst others."
+summary = "A list of books — inspired by Patrick Collison , Dan Wang , Bret Victor amongst others. As is a tale, so is life."
 +++
 
 ### Bookshelf
