@@ -1,7 +1,7 @@
 +++
 title = "Links"
 menu = "main"
-summary = "Links to interesting things"
+summary = "...nothing on earth exerts such pressure on the human soul as a series of links"
 +++
 
 #### Essays
