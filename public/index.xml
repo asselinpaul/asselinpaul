@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paul-Arthur Asselin</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Paul-Arthur Asselin</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>a tool for multimodal model evaluations</title>
+      <link>http://localhost:1313/multimodal-model-evaluations/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/multimodal-model-evaluations/</guid>
+      <description>Announcing https://nonfinito.xyz — a tool that makes it easy to run and share evaluations of multimodal models. We support hundreds of models via OpenRouter: Run the same evaluation on multiple models to compare their outputs: Vision-Language Models (VLMs) are supported:&#xA;Write your own evaluator code or use our built-in evaluators:&#xA;You can try it out at https://nonfinito.xyz. If you are curious, it&#39;s built with OpenRouter, Remix, Cloudflare R2, PostgreSQL, Clerk, inngest, Radix &amp; Fly.</description>
+    </item>
+    <item>
+      <title>002 - links</title>
+      <link>http://localhost:1313/002-links/</link>
+      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/002-links/</guid>
+      <description>Energy The Rise of Batteries in Six Charts and Not Too Many Numbers If renewables are so cheap, why are electricity prices going up? &amp;lt;blockquote&amp;gt; electricity generation is actually getting cheaper but delivering that electricity is getting more expensive. distribution makes up over 2/3 of the cost of delivering electricity (transmission is cheap) &amp;lt;/blockquote&amp;gt; 67% of nuclear Levelised Cost of Electricity (LCOE) is interest payments (src) Internet Recently shared this with a friend: Notes on Using Twitter Largely echoes my experience.</description>
+    </item>
+    <item>
+      <title>001 - links</title>
+      <link>http://localhost:1313/001-links/</link>
+      <pubDate>Sat, 09 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/001-links/</guid>
+      <description>Charisma as Natural as Gravity by Christopher Nolan (src) One night, as I&amp;#8217;m standing on LaSalle Street in Chicago, trying to line up a shot for &amp;#8220;The Dark Knight,&amp;#8221; a production assistant skateboards into my line of sight. Silently, I curse the moment that Heath first skated onto our set in full character makeup. I&amp;#8217;d fretted about the reaction of Batman fans to a skateboarding Joker, but the actual result was a proliferation of skateboards among the younger crew members.</description>
+    </item>
+    <item>
+      <title>000 - let the dice fly high</title>
+      <link>http://localhost:1313/000-let-the-dice-fly-high/</link>
+      <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/000-let-the-dice-fly-high/</guid>
+      <description>Tap tap tap&amp;#8230; is this thing on?&#xA;The Veil of Ignorance Most people in the United States agree they want some income inequality but debate exactly how much is fair. High-status people generally prefer more inequality than low-status individuals. Here we examine how much preferences for inequality are (or are not) driven by self-interest. People seemed to make decisions under the presumption of a best-case scenario. They chose a society that they would endorse if they were at the top, but not one they tolerated if they were at the bottom.</description>
+    </item>
+    <item>
+      <title>Merkle Trees</title>
+      <link>http://localhost:1313/merkle-trees/</link>
+      <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/merkle-trees/</guid>
+      <description>Go to Merkle Trees → </description>
+    </item>
+    <item>
+      <title>Bookshelf</title>
+      <link>http://localhost:1313/bookshelf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bookshelf/</guid>
+      <description>Bookshelf Inspired by Patrick Collison , Dan Wang , Bret Victor amongst others .&#xA;The Master and Margherita — Mikhail Bulgakov The Remains of the Day — Kazuo Ishiguro The Return — Hisham Matar Siddhartha — Hermann Hesse In Praise of Shadows — Jun’ichirō Tanizaki Kaputt — Curzio Malaparte Hard Rain Falling — Don Carpenter The Baron in the Trees — Italo Calvino Shipwrecks — Akira Yoshimura Reductionism in Art and Brain Science — Eric R.</description>
+    </item>
+    <item>
+      <title>Links</title>
+      <link>http://localhost:1313/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/</guid>
+      <description>Essays The Inner Ring by C. S. Lewis The B Lane Swimmer Reality has a surprising amount of detail A Message to Garcia by Elbert Hubbard When I Was a Very Small Boy by Ettore Sottsass Pages https://patrickcollison.com/fast </description>
+    </item>
+  </channel>
+</rss>
