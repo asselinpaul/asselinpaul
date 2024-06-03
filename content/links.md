@@ -1,6 +1,7 @@
 +++
 title = "Links"
 menu = "main"
+summary = "Links to interesting things"
 +++
 
 #### Essays
