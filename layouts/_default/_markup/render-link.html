@@ -1,4 +1,5 @@
 {{ if strings.HasPrefix .Destination "mailto" -}}Send mail to {{end}}
 <a href={{ .Destination | safeURL }}
     {{ if strings.HasPrefix .Destination "http" -}} target=_blank rel="noopener noreferrer" {{- end }}
->{{ .PlainText | htmlEscape }}</a>
+>{{ .PlainText }}</a>
+

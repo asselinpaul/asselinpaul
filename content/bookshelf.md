@@ -32,9 +32,9 @@ Inspired by [Patrick Collison](https://patrickcollison.com/bookshelf), [Dan Wang
 - [A Month in Siena — Hisham Matar](https://www.amazon.com/Month-Siena-Hisham-Matar/dp/059312913X)
 - [Travels — Michael Crichton](https://www.amazon.com/Travels-Vintage-Departures-Michael-Crichton/dp/0804171270)
 - [Syntax & Sage — Sep Kamvar](https://www.amazon.com/Syntax-Sage-Reflections-Software-Nature/dp/0692563636)
-- [Parkinson's Law or The Pursuit of Progress — C. Northcote Parkinson](https://www.amazon.com/Parkinsons-Law-C-Northcote-Parkinson/dp/1568490151)
+- [Parkinson’s Law or The Pursuit of Progress — C. Northcote Parkinson](https://www.amazon.com/Parkinsons-Law-C-Northcote-Parkinson/dp/1568490151)
 - **[Becoming Steve Jobs — Brent Schlender & Rick Tetzeli](https://www.amazon.com/Becoming-Steve-Jobs-Evolution-Visionary/dp/0385347421)**
-- **[L'insoutenable légèreté de l'être (The Unbearable Lightness of Being) — Milan Kundera](https://www.amazon.com/Unbearable-Lightness-Being-Perennial-Classics/dp/0061148520)**
+- **[L’insoutenable légèreté de l’être (The Unbearable Lightness of Being) — Milan Kundera](https://www.amazon.com/Unbearable-Lightness-Being-Perennial-Classics/dp/0061148520)**
 - **[The Skin — Curzio Malaparte](https://www.amazon.com/Skin-York-Review-Books-Classics/dp/1590176227)**
 - **[Slate Star Codex Essays: Volume II — Scott Alexander](https://www.amazon.com/Slate-Star-Codex-Essays-II/dp/1735797111)**
 - **[Temptations — János Székely](https://www.amazon.com/Temptation-Janos-Szekely/dp/1681374374)**
