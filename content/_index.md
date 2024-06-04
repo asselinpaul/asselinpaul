@@ -112,7 +112,7 @@ or find me on
 <br>
 <br>
 
-#### Projects
+### Projects
 
 <a target="_blank" href="https://nonfinito.xyz">
     <b>Multimodal Model Evaluation — Non finito</b>
