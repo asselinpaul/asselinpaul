@@ -127,8 +127,8 @@ or find me on
       Evaluate and compare hundreds of models with automated evaluations
       (<a
       target="_blank"
-      href="https://nonfinito.xyz/evals?eval_input=6f05a982-46c8-4c31-9fc7-d6785c19ef5e"
+      href="https://nonfinito.xyz/evals?dataset=4d2acc57-ddd7-4b6b-92cb-af7623378dde"
       >example</a
       >
-      & <a href="/003.html">blog post with more info</a>)
+      & <a target="_blank" href="/003.html">blog post with more info</a>)
   </div>
