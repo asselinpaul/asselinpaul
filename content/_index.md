@@ -114,16 +114,22 @@ or find me on
 
 ### Projects
 
-<a target="_blank" href="https://nonfinito.xyz">
-    <b>Multimodal Model Evaluation — Non finito</b>
-  </a>
-  <br>
-  <br>
-  <a target="_blank" href="https://nonfinito.xyz"
-      ><img src="/img/example_eval.png" alt="example eval"
-  /></a>
+<a target="_blank" style="border: 1px solid rgba(31, 31, 31, .1);
+color: rgba(31, 31, 31, .9);
+font-weight: 600;
+text-decoration: none;
+border-width: 1px;
+border-radius: 0.5rem;
+padding-left: .75rem;
+padding-right: .75rem;
+padding-top: .5rem;
+padding-bottom: .5rem;" href="https://nonfinito.xyz">
+Multimodal Model Evaluation
+</a>
+<br>
 
-<div>
+<div style="margin-left: 1rem">
+<i>
       Evaluate and compare hundreds of models with automated evaluations
       (<a
       target="_blank"
@@ -131,4 +137,4 @@ or find me on
       >example</a
       >
       & <a target="_blank" href="/003.html">blog post with more info</a>)
-  </div>
+</i>  </div>
