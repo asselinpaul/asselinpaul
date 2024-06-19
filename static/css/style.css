@@ -284,3 +284,31 @@ hr {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+.interact-bounce {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 100%;
+    --tw-scale-y: 100%;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+}
+
+.interact-bounce:hover {
+    --tw-scale-x: 103%;
+    --tw-scale-y: 103%;
+}
+
+.interact-bounce:active,
+.interact-bounce:hover {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.interact-bounce:active {
+    --tw-scale-x: 98%;
+    --tw-scale-y: 98%;
+}

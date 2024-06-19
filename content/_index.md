@@ -114,7 +114,7 @@ or find me on
 
 ### Projects
 
-<a target="_blank" style="border: 1px solid rgba(31, 31, 31, .1);
+<a target="_blank" class="interact-bounce" style="border: 1px solid rgba(31, 31, 31, .1);
 color: rgba(31, 31, 31, .9);
 font-weight: 600;
 text-decoration: none;
@@ -123,7 +123,8 @@ border-radius: 0.5rem;
 padding-left: .75rem;
 padding-right: .75rem;
 padding-top: .5rem;
-padding-bottom: .5rem;" href="https://nonfinito.xyz">
+padding-bottom: .5rem;
+display: inline-block" href="https://nonfinito.xyz">
 Multimodal Model Evaluation
 </a>
 <br>
