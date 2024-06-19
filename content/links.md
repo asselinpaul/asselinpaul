@@ -15,3 +15,4 @@ summary = "...nothing on earth exerts such pressure on the human soul as a serie
 #### Pages
 
 - [https://patrickcollison.com/fast](https://patrickcollison.com/fast)
+- [The Effectiveness of Unreasonable Small Groups](https://gwern.net/note/small-groups)
