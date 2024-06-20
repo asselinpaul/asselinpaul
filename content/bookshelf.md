@@ -48,6 +48,7 @@ Inspired by **[Patrick Collison](https://patrickcollison.com/bookshelf)**, **[Da
 - **[The Betrothed — Alessandro Manzoni](https://www.amazon.com/Betrothed-Novel-Alessandro-Manzoni/dp/0679643567/ref=sr_1_1?crid=2SNMMYL943SBT&keywords=The+Betrothed&qid=1681939059&sprefix=the+betrothed,aps,150&sr=8-1)**
 - **[When we cease to understand the world — Benjamín Labatut](https://www.amazon.com/gp/product/1681375664/ref=ppx_od_dt_b_asin_title_s01?ie=UTF8&psc=1)**
 - [Confessions of an Advertising Man — David Ogilvy](https://www.amazon.com/Confessions-Advertising-Man-David-Ogilvy/dp/190491537X)
+- **[Life Lived Wild: Adventures at the Edge of the Map — Rick Ridgeway](https://www.amazon.com/Life-Lived-Wild-Adventures-Edge/dp/193834099X)**
 
 <style>
   content a {
