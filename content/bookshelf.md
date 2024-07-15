@@ -49,6 +49,7 @@ Inspired by **[Patrick Collison](https://patrickcollison.com/bookshelf)**, **[Da
 - **[When we cease to understand the world — Benjamín Labatut](https://www.amazon.com/gp/product/1681375664/ref=ppx_od_dt_b_asin_title_s01?ie=UTF8&psc=1)**
 - [Confessions of an Advertising Man — David Ogilvy](https://www.amazon.com/Confessions-Advertising-Man-David-Ogilvy/dp/190491537X)
 - **[Life Lived Wild: Adventures at the Edge of the Map — Rick Ridgeway](https://www.amazon.com/Life-Lived-Wild-Adventures-Edge/dp/193834099X)**
+- **[Youth — Joseph Conrad](https://www.amazon.com/dp/0199536015)**
 
 <style>
   content a {
