@@ -312,3 +312,47 @@ hr {
     --tw-scale-x: 98%;
     --tw-scale-y: 98%;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #222
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+        color: #222
+    }
+
+    a {
+        color: #8cc2dd
+    }
+
+    code {
+        background-color: #777
+    }
+
+    pre code {
+#222
+    }
+
+    blockquote {
+        color: #222
+    }
+
+    textarea,
+    input {
+        background-color: #252525;
+        color: #222
+    }
+
+    .helptext {
+        color: #4d4d4d
+    }
+}
