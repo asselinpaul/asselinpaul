@@ -315,7 +315,7 @@ hr {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #333;
+        background-color: #fffef8;
         color: #222
     }
 
