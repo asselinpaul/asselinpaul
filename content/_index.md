@@ -3,14 +3,16 @@
 # opengraph structured data template on the home page.
 # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
 +++
-
-I'm interested in software, hardware, org design and how tools shape what we make.
-
-I currently work as a full-stack engineer writing software across the lending stack. Prior to that, I studied Computer Science at the University of Pennsylvania.
+<br>
+<div id="intro">
+I write software at <a
+                href="https://mercury.com"
+                target="_blank"
+              >Mercury</a>.
 
 <br>
 
-<div id="intro">
+
 You can reach me at <a
                 style="text-decoration: none"
                 href="mailto:mail@asselinpaul.com"
