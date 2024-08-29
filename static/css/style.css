@@ -313,6 +313,19 @@ hr {
     --tw-scale-y: 98%;
 }
 
+.transition {
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+
+.hover\:bg-white:hover {
+    --tw-bg-opacity: 1;
+    background-color: color(display-p3 0.995 0.989 0.96);
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #fffef8;
@@ -339,7 +352,7 @@ hr {
     }
 
     pre code {
-#222
+        color: #222
     }
 
     blockquote {

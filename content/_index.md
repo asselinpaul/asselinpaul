@@ -116,28 +116,16 @@ or find me on
 
 ### Projects
 
-<a target="_blank" class="interact-bounce" style="border: 1px solid rgba(31, 31, 31, .1);
-color: rgba(31, 31, 31, .9);
-font-weight: 600;
-text-decoration: none;
-border-width: 1px;
-border-radius: 0.5rem;
-padding-left: .75rem;
-padding-right: .75rem;
-padding-top: .5rem;
-padding-bottom: .5rem;
-display: inline-block" href="https://nonfinito.xyz">
-Multimodal Model Evaluation
+<a target="_blank" href="https://nonfinito.xyz" style="text-decoration: none; display: block;">
+  <div class="transition hover:bg-white" style="border: 1px solid rgba(31, 31, 31, .1); border-radius: 0.5rem; padding: 1rem; max-width: 500px;">
+    <span style="float: right;">
+      <img src="/icons/link.svg" style="width:18px; fill: black; pointer-events: none;"/>
+    </span>
+    <span style="color: rgba(31, 31, 31, .9); font-weight: 600; display: inline-block;">Multimodal Model Evaluation</span>
+    <div style="margin-top: 0.5rem; color: rgba(31, 31, 31, .9);">
+      <i>
+        Evaluate and compare models with automated evaluations
+      </i>
+    </div>
+  </div>
 </a>
-<br>
-
-<div style="margin-left: 1rem">
-<i>
-      Evaluate and compare hundreds of models with automated evaluations
-      (<a
-      target="_blank"
-      href="https://nonfinito.xyz/evals?dataset=4d2acc57-ddd7-4b6b-92cb-af7623378dde"
-      >example</a
-      >
-      & <a target="_blank" href="/003.html">blog post with more info</a>)
-</i>  </div>
