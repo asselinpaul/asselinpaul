@@ -4,7 +4,7 @@ date = "2024-10-09"
 description = "Observations from a week in China's central metropolises"
 +++
 
-I spent last week in China attending a friend's wedding. I visited two heavily populatedcentral cities: Chengdu & Chongqing. It was Golden Week, so the cities were exceedingly busy with domestic tourists.
+I spent last week in China attending a friend's wedding. I visited two heavily populated central cities: Chengdu & Chongqing. It was Golden Week, so it was exceedingly busy with domestic tourism.
 
 #### London to Chengdu (LHR-TFU)
 
