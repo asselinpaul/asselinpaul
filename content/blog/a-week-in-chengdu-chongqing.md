@@ -40,8 +40,10 @@ I spent last week in China attending a friend's wedding. I visited two heavily p
 </figure>
 
 <figure style="max-width: 50rem; margin: 0 auto;">
-  <img src="/img/chengdu/IMG_5257.jpeg" alt="Chengdu street scene" style="width: 49.5%; height: auto; display: inline-block; vertical-align: top;"/>
-  <img src="/img/chengdu/IMG_5258.jpeg" alt="Chengdu street scene" style="width: 49.5%; height: auto; display: inline-block; vertical-align: top;"/>
+  <div style="display: flex; flex-wrap: wrap; gap: 2px; justify-content: center;">
+    <img src="/img/chengdu/IMG_5257.jpeg" alt="Chengdu street scene" style="flex: 1 1 300px; max-width: calc(50% - 1px); height: auto; object-fit: cover;"/>
+    <img src="/img/chengdu/IMG_5258.jpeg" alt="Chengdu street scene" style="flex: 1 1 300px; max-width: calc(50% - 1px); height: auto; object-fit: cover;"/>
+  </div>
   <figcaption>To each their own</figcaption>
 </figure>
 
@@ -85,15 +87,19 @@ I spent last week in China attending a friend's wedding. I visited two heavily p
   <figcaption>~$90 for a little over an hour in business class between Chengdu and Chongqing</figcaption>
 </figure>
 
-<div style="position: relative; width: 100%; padding-top: 95%; max-width: 50rem; margin: 0 auto;">
-  <iframe
-    src="https://www.youtube.com/embed/iZe9Y35WSug"
-    style="position: absolute; top: 0; left: 0; height: 750px; width: 422px;"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  ></iframe>
-  <figcaption>construction boom at 347 km/h</figcaption>
-</div>
+<figure style="max-width: 50rem; margin: 0 auto;">
+  <div style="position: relative; width: 100%; padding-top: 177.78%;">
+    <video
+      src="/img/chengdu/train_web_hq.mp4"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
+      controls
+      preload="auto"
+    >
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <figcaption>Construction boom at 347 km/h</figcaption>
+</figure>
 
 <br>
 
@@ -111,14 +117,16 @@ I spent last week in China attending a friend's wedding. I visited two heavily p
   <img src="/img/chengdu/IMG_5302.jpeg" alt="Chongqing scene" style="width: 100%; height: auto;"/>
 </figure>
 
-<div style="position: relative; width: 100%; padding-top: 95%; max-width: 50rem; margin: 0 auto;">
-  <iframe
-    src="https://www.youtube.com/embed/FQhcoW2MmMs"
-    style="position: absolute; top: 0; left: 0; height: 750px; width: 422px;"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  ></iframe>
-  <figcaption>buildings as far as the eye can see</figcaption>
+<div style="position: relative; width: 100%; padding-top: 177.78%; max-width: 50rem; margin: 0 auto;">
+  <video
+    src="/img/chengdu/chongqing_web_hq.mp4"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
+    controls
+    preload="auto"
+  >
+    Your browser does not support the video tag.
+  </video>
+  <figcaption>construction boom at 347 km/h</figcaption>
 </div>
 
 <figure style="max-width: 50rem; margin: 0 auto;">
