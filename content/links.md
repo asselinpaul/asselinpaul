@@ -17,3 +17,4 @@ summary = "...nothing on earth exerts such pressure on the human soul as a serie
 
 - [https://patrickcollison.com/fast](https://patrickcollison.com/fast)
 - [The Effectiveness of Unreasonable Small Groups](https://gwern.net/note/small-groups)
+- [Productivity advice from Zhengdong Wang](https://zhengdongwang.com/productivity.html)
