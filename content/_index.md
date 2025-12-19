@@ -129,3 +129,23 @@ or find me on
     </div>
   </div>
 </a>
+
+<a target="_blank" href="https://github.com/MercuryTechnologies/claude" style="text-decoration: none; display: block; margin-top: 0.75rem;">
+  <div class="transition hover:bg-white" style="border: 1px solid rgba(31, 31, 31, .1); border-radius: 0.5rem; padding: 0.75rem 1rem; max-width: 500px;">
+    <span style="float: right;">
+      <img src="/icons/link.svg" style="width:18px; fill: black; pointer-events: none;"/>
+    </span>
+    <span style="color: rgba(31, 31, 31, .9); font-weight: 600; display: inline-block;">claude</span>
+    <span style="color: rgba(31, 31, 31, .7);"> – Haskell bindings to Anthropic's Claude API</span>
+  </div>
+</a>
+
+<a target="_blank" href="https://github.com/MercuryTechnologies/openai" style="text-decoration: none; display: block; margin-top: 0.5rem;">
+  <div class="transition hover:bg-white" style="border: 1px solid rgba(31, 31, 31, .1); border-radius: 0.5rem; padding: 0.75rem 1rem; max-width: 500px;">
+    <span style="float: right;">
+      <img src="/icons/link.svg" style="width:18px; fill: black; pointer-events: none;"/>
+    </span>
+    <span style="color: rgba(31, 31, 31, .9); font-weight: 600; display: inline-block;">openai</span>
+    <span style="color: rgba(31, 31, 31, .7);"> – Haskell bindings to OpenAI's API</span>
+  </div>
+</a>
