@@ -52,3 +52,18 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [markup.goldmark.renderer]
    unsafe = "true"
+
+# Custom output format for raw Markdown
+[mediaTypes."text/markdown"]
+  suffixes = ["md"]
+
+[outputFormats.Markdown]
+  mediaType = "text/markdown"
+  baseName = "index"
+  isPlainText = true
+
+# Enable both HTML and Markdown outputs for pages
+[outputs]
+  page = ["HTML", "Markdown"]
+  home = ["HTML"]
+  section = ["HTML"]
