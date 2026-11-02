@@ -3,14 +3,8 @@ set -e
 
 echo "🚀 Setting up Hugo workspace..."
 
-# Check if Hugo is installed
-if ! command -v hugo &> /dev/null; then
-    echo "❌ Error: Hugo is not installed"
-    echo "Please install Hugo first: https://gohugo.io/installation/"
-    exit 1
-fi
-
-echo "✓ Hugo is installed ($(hugo version))"
+# Install the same pinned Hugo release used by GitHub Pages.
+./scripts/hugo version
 
 # Initialize and update git submodules (for hugo-bearblog theme)
 echo "📦 Initializing git submodules..."

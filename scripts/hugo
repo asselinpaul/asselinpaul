@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Use the same Hugo release for local previews and GitHub Pages builds.
+project_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+hugo_version="$(cat "$project_root/.hugo-version")"
+platform="$(uname -s)"
+architecture="$(uname -m)"
+install_dir="$project_root/.tools/hugo/$hugo_version/$platform-$architecture"
+
+if [[ ! -x "$install_dir/hugo" ]]; then
+    case "$platform-$architecture" in
+        Darwin-arm64|Darwin-x86_64) archive="hugo_extended_${hugo_version}_darwin-universal.pkg" ;;
+        Linux-x86_64) archive="hugo_extended_${hugo_version}_linux-amd64.tar.gz" ;;
+        Linux-aarch64|Linux-arm64) archive="hugo_extended_${hugo_version}_linux-arm64.tar.gz" ;;
+        *) echo "Unsupported platform: $platform-$architecture" >&2; exit 1 ;;
+    esac
+
+    download_dir="$(mktemp -d "${TMPDIR:-/tmp}/asselinpaul-hugo.XXXXXX")"
+    trap 'rm -rf "$download_dir"' EXIT
+    release_url="https://github.com/gohugoio/hugo/releases/download/v$hugo_version"
+
+    echo "Installing Hugo $hugo_version for this project..." >&2
+    curl --fail --silent --show-error --location --retry 3 --connect-timeout 15 \
+        "$release_url/$archive" -o "$download_dir/$archive"
+    curl --fail --silent --show-error --location --retry 3 --connect-timeout 15 \
+        "$release_url/hugo_${hugo_version}_checksums.txt" -o "$download_dir/checksums.txt"
+
+    (
+        cd "$download_dir"
+        awk -v archive="$archive" '$2 == archive' checksums.txt > selected-checksum.txt
+        test -s selected-checksum.txt
+        if command -v sha256sum >/dev/null 2>&1; then
+            sha256sum --check selected-checksum.txt >&2
+        else
+            shasum -a 256 --check selected-checksum.txt >&2
+        fi
+    )
+
+    if [[ "$platform" == Darwin ]]; then
+        # Extract the signed package without changing the system installation.
+        pkgutil --expand-full "$download_dir/$archive" "$download_dir/package"
+        binary="$download_dir/package/Payload/hugo"
+    else
+        tar -xzf "$download_dir/$archive" -C "$download_dir" hugo
+        binary="$download_dir/hugo"
+    fi
+
+    mkdir -p "$install_dir"
+    install -m 755 "$binary" "$install_dir/hugo"
+    rm -rf "$download_dir"
+    trap - EXIT
+fi
+
+exec "$install_dir/hugo" "$@"

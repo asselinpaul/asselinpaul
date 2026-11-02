@@ -10,14 +10,17 @@ Personal website/blog for Paul-Arthur Asselin, built with Hugo static site gener
 
 ```bash
 # Development server
-hugo server
+./scripts/hugo server
 
 # Production build
-hugo --gc --minify
+./scripts/hugo --gc --minify
 
 # Initialize theme submodule (if build appears empty)
 git submodule update --init --recursive
 ```
+
+The Hugo version is pinned in `.hugo-version`. `./scripts/hugo` downloads and
+verifies that release for both local development and GitHub Pages builds.
 
 ## Architecture
 

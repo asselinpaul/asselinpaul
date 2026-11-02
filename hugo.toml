@@ -8,7 +8,7 @@ theme = 'hugo-bearblog'
 title = "Paul-Arthur Asselin"
 author = "Paul-Arthur Asselin"
 copyright = ""
-languageCode = "en-US"
+locale = "en-US"
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
