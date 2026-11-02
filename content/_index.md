@@ -8,7 +8,7 @@
 I write software at <a
                 href="https://mercury.com"
                 target="_blank"
-              >Mercury</a> (<a href="https://mercury.com/command" target="_blank">Command</a> and <a href="https://mercury.com/insights" target="_blank">Insights</a>).
+              >Mercury</a>.
 
 <br>
 
